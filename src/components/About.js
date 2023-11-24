@@ -1,14 +1,13 @@
+// About.js
 import React from 'react';
 
-const About = ({ image, aboutText }) => {
-  const defaultImage = "https://via.placeholder.com/215";
-  
+function About({ image, altText, aboutText }) {
   return (
     <aside>
-      <img src={image || defaultImage} alt="blog logo" />
+      <img src={image} alt={altText} />
       <p>{aboutText}</p>
     </aside>
   );
-};
+}
 
 export default About;
